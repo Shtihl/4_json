@@ -18,9 +18,9 @@ def pretty_print_json(data):
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
-        source_file_name = sys.argv[1]
-        required_content = load_json_data(source_file_name)
-        pretty_print_json(required_content)
+        source_file_path = sys.argv[1]
+        loaded_json = load_json_data(source_file_path)
+        pretty_print_json(loaded_json)
     else:
         print("Usage: python pprint_json.py path_to_json_file")
 
